@@ -9,6 +9,7 @@ on one test file of a package of your choice.
 <b>Approach</b>: Modified the (<a href="https://github.com/da-ta-vinci21/TravisTests/blob/master/test1.R#L99-L126">code-test1.R</a>) to run testthatQuantity's example code on package stringr's test-detect.R test file.
 Obtained the plot given below, <br>
 ![stringr-detect-tests.png](string-detect-tests.png)
+As can be seen, the recent commit has seen a slight increase in the runtime of test "special cases are correct" among other things. 
 
 # Test 2 (Medium)
 edit the test.file function so that it records the pass/fail status of each test. 
