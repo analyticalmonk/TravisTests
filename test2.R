@@ -195,7 +195,7 @@ test.file <- function(tfile, test.repetitions=3){
     ### Given the nature of the default reporter (StopReporter), the test will come to a
     ### halt whenever an error takes place, thus if it progresses to completion
     ### that will be an indicator of the fact that no error occured. Thus, in
-    ## this case the status is update as "passed".
+    ### this case the status is update as "passed".
     status <- "passed"
     time.df <- data.frame(test.name, seconds, status)
     test.results[[test.name]] <<- time.df
