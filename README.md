@@ -21,7 +21,8 @@ Given the nature of the default reporter (StopReporter), the test will come to a
 an error takes place, thus if it progresses to completion that will be an indicator of the fact that no error
 occured. Thus, in this case the status is update as "passed", otherwise the status would be set as "fail".
 
-
-
-
-
+# Test 3 (Hard)
+<i>the current code in test.file and test.commit assumes that the tests specified in tfile do not change across different git commits, which may or may not be true. Implement a test.commits(tfile, SHA1.vec) function which saves the tests in tfile and runs them against all commits specified in the SHA1.vec character vector.</i>
+<br>
+<b>Approach</b>: <a href = "https://github.com/da-ta-vinci21/TravisTests/blob/master/test3.R#L201-L228">The relevant code (201-228)</a>.
+Saved current version of test code from the given tfile before checking it against the package versions specified by the SHA1 vector. Plotted the graph same similarly as done in the previous version.
