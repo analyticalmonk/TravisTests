@@ -202,9 +202,10 @@ test.commits <- function(tfile, SHA1.vec) {
   stopifnot(is.character(tfile))
   stopifnot(length(tfile) == 1)
   stopifnot(!is.null(SHA1.vec))
-  history <- commits.for.file(tfile)
+  stopifnot(class(SHA1.vec) == "character")
+  history <- commits.for.file(tfile) ## Gets the git commit log for the given file
   version.list <- list()
-  for(commit.i in SHA1.vec[0:20]){
+  for(commit.i in SHA1.vec){
     ### Returns a data frame containing info about test timings for the
     ### given commit commit.i
     version.list[[commit.i]] <- test.commit(tfile, commit.i)
